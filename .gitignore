@@ -1,0 +1,100 @@
+# ===============================
+# Go build files
+# ===============================
+
+/bin/
+/build/
+/dist/
+/out/
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+
+# Go workspace / cache
+
+*.log
+*.out
+*.tmp
+*.cache
+*.coverprofile
+*.prof
+*.pprof
+
+# Go modules
+
+vendor/
+go.work
+go.work.sum
+
+# ===============================
+# Environment / Config files
+# ===============================
+# Local configs (never commit credentials)
+
+config.yaml
+.env
+.env.*
+*.local.yaml
+*.env.local
+
+# ===============================
+# Database & Migrations
+# ===============================
+# If migrations are generated dynamically
+
+migrations/*.lock
+migrations/*.tmp
+
+# ===============================
+# IDE / Editor settings
+# ===============================
+# VSCode
+
+.vscode/
+
+# GoLand / IntelliJ
+
+.idea/
+
+# Sublime
+
+*.sublime-workspace
+*.sublime-project
+
+# ===============================
+# OS / System files
+# ===============================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===============================
+# Test artifacts
+# ===============================
+
+coverage.out
+test-results/
+*.mockery.yaml
+
+# ===============================
+# Miscellaneous
+# ===============================
+# Temporary or generated files
+
+*.bak
+*.old
+*.orig
+*.swp
+*.swo
+
+# ===============================
+# Logs
+# ===============================
+
+logs/
+*.log
+*.trace
+*.pid
