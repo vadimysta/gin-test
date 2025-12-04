@@ -71,6 +71,8 @@ func main() {
 	r.GET("/albums/:id", getAlbum)
 	r.POST("/create", createAlbums)
 
-	r.Run()
+	if err := r.Run(); err != nil {
+		panic(err)
+	}
 
 }
